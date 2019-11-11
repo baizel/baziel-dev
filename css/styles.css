@@ -1,7 +1,15 @@
 .bg-image {
     /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    height: 100vh;
+    filter: grayscale(75%) blur(8px);
+    -webkit-filter: grayscale(75%) blur(8px) ;
+}
+.background img {
+    width: auto;
+    min-width: 100%;
+}
+.header{
+    height: 100vh;
 }
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
