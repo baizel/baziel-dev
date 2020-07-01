@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow:
+Disallow: /favicon
+Disallow: /css
+Disallow: /images
+Disallow: /js
+
+Sitemap: https://baizel.dev/sitemap.xml
