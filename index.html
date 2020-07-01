@@ -1,22 +1,39 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Baizel Mathew | Developer</title>
-    <meta name="description" content="">
+    <meta name="description"
+          content="A website to showcase some of the projects Baizel Mathew has developed over the years.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--- Favicon ----->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
+    <!--------- CSS -------->
     <link rel="stylesheet" href="css/startup-materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135027670-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-135027670-2');
@@ -34,7 +51,7 @@
 
             <h1>
                 <span class="typewrite" data-period="2000"
-                      data-type='[ "Developer", "Engineer", "Problem Solver", "Baizel Mathew" ]'></span>
+                      data-type='[ "Developer", "Engineer", "Baizel Mathew" ]'></span>
                 <span class="wrap"></span>
 
             </h1>
@@ -52,55 +69,97 @@
             <div class="row staggered-transition-wrapper" data-duration="0" data-staggereddelay=".9">
 
                 <div class="col s12 m6 l4 fade-in-out">
-                    <h4><i class="large material-icons">share</i></h4>
-                    <p class="caption">Viz</p>
-                    <p class="caption">A tool to help in the aid of understanding graph algorithms through
-                        visualisation, animation and knowledge testing</p>
-                    <div class="row">
-                        <div class="col s6">
-                            <p class="caption"><a href="https://viz.baizel.dev">Visit project</a></p>
+                    <div class="card grey darken-4">
+                        <div class="card-content">
+                            <span class="card-title center"><i class="medium material-icons">group</i></span>
+                            <p>JGroups Netty</p>
+                            <p>Designed and implemented a transport layer protocol for
+                                JGroups using Netty as part of Masters project and internship at Red Hat <i class="white-text fa fa-linux"></i>.
+                                This project will eventually replace TCP_NIO2 built into JGroups.
+                            </p>
                         </div>
-                        <div class="col s6">
-                            <p class="caption"><a href="https://github.com/baizel/viz-dissertation">Source</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l4 fade-in-out">
-                    <h4><i class="large material-icons">speaker_phone</i></h4>
-                    <p class="caption">Spotify Music Sharing</p>
-                    <p class="caption">Android application that hosts a http server on the client phone that exposes the
-                        internal Spotify SDK so that people connected can control the client's music.</p>
-                    <div class="row">
-
-                        <div class="col s12">
-                            <p class="caption"><a
-                                    href="https://github.com/baizel/android-spotify-music-sharing">Source</a></p>
+                        <div class="card-action center">
+                            <a href="http://belaban.blogspot.com/2020/06/new-netty-transport.html">Announcement</a>
+                            <a href="https://mvnrepository.com/artifact/org.jgroups/jgroups-netty">Maven</a>
+                            <a href="http://www.github.com/jgroups-extras/jgroups-netty">Source</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12 m6 l4 fade-in-out">
-                    <h4><i class="large material-icons">code</i></h4>
-                    <p class="caption">More Coming Soon</p>
+                    <div class="card grey darken-4">
+                        <div class="card-content">
+                            <span class="card-title center"><i class="medium material-icons">info</i></span>
+                            <p>COVID-19 Infographics</p>
+                            <p>Volunteer work to develop a site to display infographics about COVID-19
+                                translated into different languages for the BAME community.
+                            </p>
+                        </div>
+                        <div class="card-action center">
+                            <a href="https://www.covid19graphics.info/">Visit Project</a>
+                            <a href="https://github.com/baizel/covidinfographics">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4 fade-in-out">
+                    <div class="card grey darken-4">
+                        <div class="card-content">
+                            <span class="card-title center"><i class="medium material-icons">share</i></span>
+                            <p>Viz</p>
+                            <p>A tool to help in the aid of understanding graph algorithms through
+                                visualisation, animation and knowledge testing. This was a third year final project.
+                            </p>
+                        </div>
+                        <div class="card-action center">
+                            <a href="https://viz.baizel.dev">Visit Project</a>
+                            <a href="https://github.com/baizel/viz-dissertation">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4 fade-in-out">
+                    <div class="card grey darken-4">
+                        <div class="card-content">
+                            <span class="card-title center"><i class="medium material-icons">speaker_phone</i></span>
+                            <p>Spotify Music Sharing</p>
+                            <p>Android application that hosts a http server on the client phone that exposes the
+                                internal Spotify SDK so that people connected can control the client's music.
+                            </p>
+                        </div>
+                        <div class="card-action center">
+                            <a href="https://github.com/baizel/android-spotify-music-sharing">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4 fade-in-out">
+                    <div class="card grey darken-4">
+                        <div class="card-content">
+                            <span class="card-title center"><i class="fa fa-github medium material-icons"></i></span>
+                        </div>
+                        <div class="card-action center">
+                            <a href="https://github.com/baizel">See more projects at GitHub</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
+
 </div>
+
 
 <footer class="page-footer black">
     <div class="container">
-
         <div class="col s12 center">
             <h5>Contact</h5>
             <ul>
-                <li><a href="mailto:work@baizel.dev?Subject=Hello">Email</a></li>
+                <li><a href="mailto:contact@baizel.dev?Subject=Hello">Email</a></li>
                 <li><a href="https://www.github.com/baizel">Github</a></li>
             </ul>
         </div>
-    </div>
     </div>
 </footer>
 

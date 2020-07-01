@@ -2,26 +2,37 @@
     /* Add the blur effect */
     height: 100vh;
     filter: grayscale(75%) blur(8px);
-    -webkit-filter: grayscale(75%) blur(8px) ;
+    -webkit-filter: grayscale(75%) blur(8px);
 }
+
 .background img {
     width: auto;
     min-width: 100%;
 }
-.header{
+
+.header {
     height: 100vh;
 }
+
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
+
 @keyframes blink-animation {
     to {
         visibility: hidden;
     }
 }
+
 @-webkit-keyframes blink-animation {
     to {
         visibility: hidden;
     }
+}
+.card-action {
+    border: none !important;
+}
+.card-action a {
+    color: #e0f2f1 !important;
 }
